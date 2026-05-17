@@ -48,7 +48,7 @@
 ---
 
 ### 任务 3：完成面向 AI 应用的 Compose 布局最终实现结果
-*(项目文件夹：`E2-2-3LiteRTAIDemo screenshot`)*
+*(项目文件夹：`E2-2-3LiteRTAIDemo`)*
 
 #### 一、 界面划分为 4 大区域
 
