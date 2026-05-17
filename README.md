@@ -4,7 +4,7 @@
 <img width="1280" height="764" alt="E2-2-1" src="https://github.com/user-attachments/assets/13058b36-f4d5-4175-a9e1-83ada2c4952b" />
 ---
 ###任务2：按照教程完成Compose布局的实践步骤截图（项目文件夹：E2-2-2BasicCodelab）
-为Greeting 设置背景色
+**为Greeting 设置背景色**
 <img width="1280" height="764" alt="E2-2-2-1" src="https://github.com/user-attachments/assets/36a90f2a-35bd-4960-ad00-dfe9a93ff764" />
 为默认修饰符添加内边距修饰符：modifier.padding(24.dp)
 <img width="1280" height="764" alt="E2-2-2-2" src="https://github.com/user-attachments/assets/4324a846-5e75-42b6-bc5d-88886716eb71" />
@@ -22,20 +22,21 @@ greeting子集垂直放置
 <img width="1280" height="764" alt="E2-2-2-8" src="https://github.com/user-attachments/assets/b6bb348b-360a-4356-8bab-09e12a81841b" />
 ---
 ###任务3：完成面向AI应用的Compose布局最终实现结果截图（项目文件夹：E2-2-3LiteRTAIDemo screenshot）
-一、界面划分为4大区域
-1.顶部状态栏：显示应用标题 LiteRT AI Demo同时预留了右侧的 MoreVert 更多操作入口。
-2.相机预览区：采用深色圆角卡片设计，模拟 CameraX 相机实时预览画面。带有视觉层叠效果的 READY 状态指示标签，用于提示AI 模型当前的状态。
-3.测试结果区 ：采用卡片形式展示 AI 识别的详细数据，包含：模型名称 (Model)、识别结果 (Result)、置信度 (Confidence)、耗时 (Time)。
-4.操作按钮区 ：采用底部导航栏样式实现核心交互：拍照识别 (Capture)、相册导入 (Gallery)、切换模型 (Model)、清空结果 (Clear)。
-二、全局架构
-1.使用 Material 3 的 Scaffold 分离了 顶部栏、底部操作区和主体内容区。
-2.主体内容排版：外层使用 Column 组件将占位空间、预览区、结果区自上而下垂直线性排列，并通过 horizontalAlignment = Alignment.CenterHorizontally 保证居中对齐。
-预览区层叠布局 )：
-3.相机预览区域使用了 Box 布局。底层是带圆角和深色背景的容器；居中对齐放置了相机图标和文字；右上角（Alignment.TopEnd）层叠放置了 READY 状态指示器。
-结果信息列表 (Row + Column)：
-利用 Surface 包装成卡片，内部通过自定义的 ResultItem 组件渲染数据。ResultItem 内部使用 Row 布局，并通过 Arrangement.SpaceBetween 实现了标签居左、数值居右的对齐效果。
-4.底部操作区 ：
-在 bottomBar 中使用 Row 水平排列自定义的 BottomNavItem，图标与文字的组合通过内部的 Column 实现。
-最终结果实现如下：
+#### 一、 界面划分为 4 大区域
+
+1. **顶部状态栏**：显示应用标题 `LiteRT AI Demo`，同时预留了右侧的 MoreVert 更多操作入口。
+2. **相机预览区**：采用深色圆角卡片设计，模拟 CameraX 相机实时预览画面。带有视觉层叠效果的 `READY` 状态指示标签，用于提示 AI 模型当前的状态。
+3. **测试结果区**：采用卡片形式展示 AI 识别的详细数据，包含：模型名称 (Model)、识别结果 (Result)、置信度 (Confidence)、耗时 (Time)。
+4. **操作按钮区**：采用底部导航栏样式实现核心交互：拍照识别 (Capture)、相册导入 (Gallery)、切换模型 (Model)、清空结果 (Clear)。
+
+#### 二、 全局架构
+
+1. **整体框架**：使用 Material 3 的 `Scaffold` 分离了顶部栏、底部操作区和主体内容区。
+2. **主体内容排版**：外层使用 `Column` 组件将占位空间、预览区、结果区自上而下垂直线性排列，并通过 `horizontalAlignment = Alignment.CenterHorizontally` 保证居中对齐。
+3. **预览区层叠布局**：相机预览区域使用了 `Box` 布局。底层是带圆角和深色背景的容器；居中对齐放置了相机图标和文字；右上角 (`Alignment.TopEnd`) 层叠放置了 `READY` 状态指示器。
+4. **结果信息列表**：利用 `Surface` 包装成卡片，内部通过自定义的 `ResultItem` 组件渲染数据。`ResultItem` 内部使用 `Row` 布局，并通过 `Arrangement.SpaceBetween` 实现了标签居左、数值居右的对齐效果。
+5. **底部操作区**：在 `bottomBar` 中使用 `Row` 水平排列自定义的 `BottomNavItem`，图标与文字的组合通过内部的 `Column` 实现。
+
+**最终结果实现如下：**
 <img width="1280" height="764" alt="E2-2-3" src="https://github.com/user-attachments/assets/51a15c1c-450b-4c5d-b170-9f63303b0e9f" />
 ---
