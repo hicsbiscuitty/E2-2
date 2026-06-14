@@ -48,10 +48,9 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 }
 ```
 <img width="1280" height="764" alt="E2-2-2-2" src="https://github.com/user-attachments/assets/4324a846-5e75-42b6-bc5d-88886716eb71" />
-***3. 使 Greeting 子集垂直放置***
 
-为每个自定义可组合项预留一个默认的 modifier 参数，并将其转发到函数内部调用的第一个子组件中。
-
+***3.重复使用可组合项***
+创建一个MyApp 的可组合项，该组合项中包含Greeting
 ```kotlin
 @Composable
 fun MyApp(modifier: Modifier = Modifier) {
@@ -62,6 +61,22 @@ fun MyApp(modifier: Modifier = Modifier) {
         Greeting("Android")
     }
 }
+```
+更改Greeting
+```kotlin
+import androidx.compose.foundation.layout.Column
+// ...
+
+@Composable
+fun Greeting(name: String, modifier: Modifier = Modifier) {
+    Surface(color = MaterialTheme.colorScheme.primary) {
+        Column(modifier = modifier.padding(24.dp)) {
+            Text(text = "Hello ")
+            Text(text = name)
+        }
+    }
+}
+
 ```
 <img width="1280" height="764" alt="E2-2-2-3" src="https://github.com/user-attachments/assets/80506a34-16d9-419b-bbe7-2b99e872c905" />
 
