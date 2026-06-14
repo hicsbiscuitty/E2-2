@@ -1,11 +1,11 @@
 # 实验2_2构建Kotlin应用并使用Compose布局  (Date：6/5)
 ## 实验目录导航
 
-| 任务 | 项目文件夹 | 实验内容 | 链接 |
-|------|------------|----------|------|
-| 任务1 | E2-2-1MyFirstKotlinApp | 首个 Kotlin APP 的构建 | [点击查看](./E2-2-1MyFirstKotlinApp) |
-| 任务2 | E2-2-2BasicsCodelab | Compose 布局实践 | [点击查看](./E2-2-2BasicsCodelab) |
-| 任务3 | E2-2-3LiteRTAIDemo | LiteRT AI Demo 开发 | [点击查看](./E2-2-3LiteRTAIDemo) |
+| 任务 | 项目文件夹  | 
+|----------------|------------|
+| 任务1首个 Kotlin APP 的构建 | [E2-2-1MyFirstKotlinApp](./E2-2-1MyFirstKotlinApp) |
+| 任务2Compose 布局实践 | [E2-2-2BasicsCodelab](./E2-2-2BasicsCodelab) |
+| 任务3LiteRT AI Demo 开发 | [E2-2-3LiteRTAIDemo](./E2-2-3LiteRTAIDemo) |
 ---
 **任务 1：首个 Kotlin APP 的构建**
 
