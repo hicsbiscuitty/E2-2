@@ -6,10 +6,14 @@
 | 任务1 | E2-2-1MyFirstKotlinApp | 首个 Kotlin APP 的构建 | [点击查看](./E2-2-1MyFirstKotlinApp) |
 | 任务2 | E2-2-2BasicsCodelab | Compose 布局实践 | [点击查看](./E2-2-2BasicsCodelab) |
 | 任务3 | E2-2-3LiteRTAIDemo | LiteRT AI Demo 开发 | [点击查看](./E2-2-3LiteRTAIDemo) |
+---
 **任务 1：首个 Kotlin APP 的构建**
+
 打开 Android Studio，选择 New Project 来创建一个应用，然后在 Phone and Tablet 选项卡，选择 Empty Activity，将应用命名为 MyFirstKotlinApp，点击 Finish。
 <img width="1280" height="764" alt="E2-2-1" src="https://github.com/user-attachments/assets/13058b36-f4d5-4175-a9e1-83ada2c4952b" />
+
 **任务 2：按照教程完成 Compose 布局的实践步骤**
+
 选择 Phone and Tablet 选项卡中 Empty Activity，命名为 BasicsCodelab。
 ***1. 为 Greeting 设置背景色***
 使用 Surface 包装 Text。Surface 会读取 Material Design 主题并应用背景颜色，确保文字与背景之间拥有合理的对比度。
@@ -25,6 +29,7 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 }
 ```
 <img width="1280" height="764" alt="E2-2-2-1" src="https://github.com/user-attachments/assets/36a90f2a-35bd-4960-ad00-dfe9a93ff764" />
+
 ***2. 为默认修饰符添加内边距***
 
 ```kotlin
