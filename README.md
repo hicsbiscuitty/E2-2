@@ -50,6 +50,7 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 <img width="1280" height="764" alt="E2-2-2-2" src="https://github.com/user-attachments/assets/4324a846-5e75-42b6-bc5d-88886716eb71" />
 
 ***3.重复使用可组合项***
+
 创建一个MyApp 的可组合项，该组合项中包含Greeting
 ```kotlin
 @Composable
@@ -224,7 +225,7 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 
 ### 任务 3：完成面向 AI 应用的 Compose 布局最终实现结果
 
-####完整代码
+完整代码
 ```kotlin
 package com.example.myfirstkotlinapp
 
