@@ -15,6 +15,7 @@
 **任务 2：按照教程完成 Compose 布局的实践步骤**
 
 选择 Phone and Tablet 选项卡中 Empty Activity，命名为 BasicsCodelab。
+
 ***1. 为 Greeting 设置背景色***
 使用 Surface 包装 Text。Surface 会读取 Material Design 主题并应用背景颜色，确保文字与背景之间拥有合理的对比度。
 ```kotlin
